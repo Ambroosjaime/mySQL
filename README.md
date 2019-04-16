@@ -38,6 +38,7 @@ drill 1
 
 Drill 2
 
+
 Familiarize yourself first with this table. What does it contain? what are the columns? Then, same principle as above:
     • Find the syntax to perform each of the following queries:*
 
@@ -112,5 +113,6 @@ Drill 4
        select count(*) from octocats where FirstName ='Nadia'
 
     5. On this new SQLFiddle, finds the function to display only the year of the "birthdate" column and displays the first name of all octocts 		and their year of birth. (hint: how do you say "year" in English?)
-       //////////////////////////////////////////////////////////////////////////////////////////////////////
+	select extract (year From birtdate), FirstName from octocats
+       
 
